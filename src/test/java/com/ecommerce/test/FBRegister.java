@@ -76,7 +76,9 @@ public class FBRegister {
 
   @BeforeSuite
   public void beforeSuite() {
-	  System.out.println("Inside before Suite");
+	  System.out.println("Inside before Suite");	
+	  System.setProperty("webdriver.chrome.driver","D:\\jars\\chromedriver.exe");
+
 	  driver = new ChromeDriver();
 	  driver.get(baseUrl);
   }
